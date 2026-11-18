@@ -18,7 +18,7 @@ import javax.crypto.spec.SecretKeySpec
 
 class Moviebox : MainAPI() {
 
-    override var mainUrl = "https://api6.aoneroom.com"
+    override var mainUrl = "https://api.inmoviebox.com"
     override val instantLinkLoading = true
     override var name = "Moviebox"
     override val hasMainPage = true
@@ -27,11 +27,6 @@ class Moviebox : MainAPI() {
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries, TvType.Anime, TvType.AsianDrama)
 
     private val hostPool = listOf(
-        "https://api6.aoneroom.com",
-        "https://api5.aoneroom.com",
-        "https://api4.aoneroom.com",
-        "https://api4sg.aoneroom.com",
-        "https://api3.aoneroom.com",
         "https://api.inmoviebox.com"
     )
     private var activeHostIdx = 0
