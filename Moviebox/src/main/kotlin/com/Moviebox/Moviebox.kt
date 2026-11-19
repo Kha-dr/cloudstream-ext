@@ -27,7 +27,12 @@ class Moviebox : MainAPI() {
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries, TvType.Anime, TvType.AsianDrama)
 
     private val hostPool = listOf(
-        "https://api.inmoviebox.com"
+        "https://api.inmoviebox.com",
+        "https://api6.aoneroom.com",
+        "https://api5.aoneroom.com",
+        "https://api4.aoneroom.com",
+        "https://api4sg.aoneroom.com",
+        "https://api3.aoneroom.com"
     )
     private var activeHostIdx = 0
 
